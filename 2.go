@@ -18,12 +18,12 @@ func (d DayTwo) SolveTwo(input string) string {
 func (d DayTwo) solve(input string, isValid func(input uint64) bool) string {
 	var invalidIDs uint64
 
-	for _, line := range strings.Split(input, ",") {
-		if line == "" {
+	for _, idTuple := range strings.Split(input, ",") {
+		if idTuple == "" {
 			continue
 		}
 
-		ids := strings.Split(line, "-")
+		ids := strings.Split(idTuple, "-")
 
 		first, err := strconv.ParseUint(ids[0], 10, 64)
 		if err != nil {

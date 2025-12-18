@@ -34,6 +34,8 @@ func main() {
 	days := map[int]PartialPuzzle{
 		1: DayOne{},
 		2: DayTwo{},
+		3: DayThree{},
+		4: DayFour{},
 	}
 
 	solver, ok := days[day]
