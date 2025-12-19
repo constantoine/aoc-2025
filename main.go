@@ -36,6 +36,7 @@ func main() {
 		2: DayTwo{},
 		3: DayThree{},
 		4: DayFour{},
+		5: DayFive{},
 	}
 
 	solver, ok := days[day]
